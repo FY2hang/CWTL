@@ -1,18 +1,30 @@
 ## 📂 Dataset Download
 
-The sanitized dataset **CWPS** is available on Google Drive.
+The sanitized dataset **CWTL** is available on Google Drive.
 
-- **Download Link**: [Download CWPS Dataset (Google Drive)](https://drive.google.com/drive/folders/1HOw-2QZDmZxn9RVG57w2N-80kgclTdut?usp=drive_link)
+- **Download Link**: [Download CWTL Dataset (Google Drive)](https://drive.google.com/drive/folders/1HOw-2QZDmZxn9RVG57w2N-80kgclTdut?usp=drive_link)
 
 ### Dataset Structure
 After downloading and extracting, please organize the dataset directory as follows:
 
 ```text
-CWPS_sanitized/
-├── images/
-│   ├── train/          # Training images
-│   └── val/            # Validation images
-└── labels/
-    ├── train_aug3.json # COCO annotations for training
-    └── val_aug3.json   # COCO annotations for validation
+CWTL/
+├── annotations
+│   ├── instances_test_complex.json
+│   ├── instances_test_normal.json
+│   ├── instances_test_rain.json
+│   ├── instances_test_snow.json
+│   ├── instances_test_wind.json
+│   ├── instances_train_complex.json
+│   └── instances_val_complex.json
+└── images
+    ├── test
+    │   ├── complex
+    │   ├── normal
+    │   ├── rain
+    │   ├── snow
+    │   └── wind
+    ├── train_complex
+    └── val_complex
+
 ```
